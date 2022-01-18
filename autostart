@@ -1,8 +1,7 @@
-exlusion="name='XOSD'"
-
 $HOME/.config/openbox/screenlayout.sh &
+# dbus-daemon --session --fork &
 setxkbmap -option caps:escape &
-picom -cCf --vsync --shadow-exclude=$exclusion --fade-exclude=$exclusion -b &
-tint2 &
+nitrogen --set-zoom-fill --random &
 albert &
-volumeicon &
+tint2 &
+(sleep 0.25 && picom -cCf --vsync &)
