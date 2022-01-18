@@ -180,12 +180,34 @@
     <chainQuitKey>C-g</chainQuitKey>
 
     <!-- Execution -->
+    <keybind key="W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Nautilus</name>
+        </startupnotify>
+        <command>nautilus --new-window</command>
+      </action>
+    </keybind>
     <keybind key="W-Return">
       <action name="Execute">
         <command>terminator</command>
       </action>
     </keybind>
+    <keybind key="W-w">
+      <action name="Execute">
+        <command>nitrogen --set-zoom-fill --random</command>
+      </action>
+    </keybind>
 
+    <!-- Show Menu -->
+    <keybind key="W-Tab">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
+
+    <!-- Monitor Brightness -->
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
         <command>brightlight -p -i 5</command>
@@ -398,16 +420,6 @@
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
-      </action>
-    </keybind>
-    <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
   </keyboard>
